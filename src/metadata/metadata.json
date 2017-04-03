@@ -1,0 +1,306 @@
+{
+    "package": "AIception",
+    "tagline": "Artificial intelligence for work with images.",
+    "description": "Artificial intelligence for work with images.",
+    "image": "https://www.aiception.com/static/doc/images/logo.png",
+    "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-AIception-Package",
+    "keywords": [
+        "API",
+        "AI",
+        "AIception"
+    ],
+    "accounts": {
+        "domain": "aiception.com",
+        "credentials": [
+            "apiToken"
+        ]
+    },
+    "blocks": [
+        {
+            "name": "findFaces",
+            "description": "Get a list of all the locations of the faces in the image.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "imageUrl",
+                    "type": "String",
+                    "info": "The image to analyze.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "getFaceTask",
+            "description": "Gets the face task.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "taskId",
+                    "type": "String",
+                    "info": "An internal id for the task.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "createFaceAgeTask",
+            "description": "Creates a new face age task that approximates the age of the person in the image.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "imageUrl",
+                    "type": "String",
+                    "info": "The image to analyze.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "getFaceAgeTask",
+            "description": "Gets the face_age task.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "taskId",
+                    "type": "String",
+                    "info": "An internal id for the task.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "createDetectObjectTask",
+            "description": "Creates a new detect object task that recognizes the object in the image.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "imageUrl",
+                    "type": "String",
+                    "info": "The image to analyze.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "getDetectObjectTask",
+            "description": "Gets the detect_object task.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "taskId",
+                    "type": "String",
+                    "info": "An internal id for the task.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "createAdultContentTask",
+            "description": "Creates a new adult_content task that tells the if the image has nudity or sexual content.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "imageUrl",
+                    "type": "String",
+                    "info": "The image to analyze.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "getAdultContentTask",
+            "description": "Gets the adult_content task.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "taskId",
+                    "type": "String",
+                    "info": "An internal id for the task.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "createArtisticImage",
+            "description": "Given an image content and a style image create a new stylized image of the content.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "imageUrl",
+                    "type": "String",
+                    "info": "The content image to analyze.",
+                    "required": true
+                },
+                {
+                    "name": "styleUrl",
+                    "type": "String",
+                    "info": "The style image to analyze.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "getArtisticImageByTaskId",
+            "description": "The artistic_image will have the urls of the stylized images.",
+            "args": [
+                {
+                    "name": "apiToken",
+                    "type": "credentials",
+                    "info": "Secret API Token.",
+                    "required": true
+                },
+                {
+                    "name": "taskId",
+                    "type": "String",
+                    "info": "An internal id for the task.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        }
+    ]
+}
