@@ -1,12 +1,12 @@
 <?php
 return array (
     'package' => 'AIception',
-    'tagline' => 'Artificial intelligence for work with images.',
-    'description' => 'Artificial intelligence for work with images.',
+    'tagline' => 'Identify objects, faces and a person\'s age from an image.',
+    'description' => 'Connect to the AIception Visual Recognition API to identify objects, faces and a person\'s age from an image. Test an API call and export the code into your app.',
     'image' => 'https://www.aiception.com/static/doc/images/logo.png',
     'repo' => 'https://github.com/RapidSoftwareSolutions/Marketplace-AIception-Package',
     'keywords' => array (
-        'API', 'AI', 'AIception',
+        'AI', 'API', 'artificial', 'image', 'intelligence', 'pic', 'picture', 'recognition', 'visual',
     ),
     'accounts' => array (
         'domain' => 'aiception.com',

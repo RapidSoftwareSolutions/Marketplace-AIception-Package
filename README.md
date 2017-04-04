@@ -1,7 +1,7 @@
 [![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/AIception/functions?utm_source=RapidAPIGitHub_AIceptionFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
 
 # AIception Package
-Artificial intelligence for work with images.
+Identify objects, faces and a person's age from an image. Connect to the AIception Visual Recognition API to identify objects, faces and a person's age from an image. Test an API call and export the code into your app.
 * Domain: [aiception.com](https://aiception.com/)
 * Credentials: apiToken
 
